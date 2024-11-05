@@ -1,5 +1,3 @@
-Passo a Passo para a Aplicação:
-
 - Criar um Projeto Novo
     - No Android Studio, crie um novo projeto Android usando Kotlin.
     - Nomeie o projeto como LifecycleDemo.
