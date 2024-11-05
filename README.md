@@ -1,6 +1,5 @@
 # Desenvolvimento de Software para Dispositivos Móveis 👩🏻‍💻
 <p align="center">Códigos desenvolvidos durante a disciplina.</p>
-
 #
 <h4 align="center">Universidade Federal do Ceará - Campus Quixadá</h4>
 
