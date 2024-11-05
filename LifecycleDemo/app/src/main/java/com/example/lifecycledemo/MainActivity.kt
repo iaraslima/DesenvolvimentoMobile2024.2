@@ -16,6 +16,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.lifecycledemo.ui.theme.LifecycleDemoTheme
 
 class MainActivity : ComponentActivity() {
+
+    //onCreate: Inicializa a interface da Activity e exibe uma mensagem de log e
+    // Toast quando a Activity é criada pela primeira vez.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,6 +29,8 @@ class MainActivity : ComponentActivity() {
             Toast.LENGTH_SHORT).show()
     }
 
+    //onStart: Chamado quando a Activity está prestes a se tornar visível.
+    // Adicionar uma mensagem de log e Toast.
     override fun onStart() {
         super.onStart()
 
@@ -34,6 +39,8 @@ class MainActivity : ComponentActivity() {
         Toast.makeText(this, "onStart chamado", Toast.LENGTH_SHORT).show()
     }
 
+    //onResume: Chamado quando a Activity está pronta para interações do usuário.
+    // Exibe a mensagem "onResume chamado".
     override fun onResume() {
         super.onResume()
 
@@ -42,6 +49,9 @@ class MainActivity : ComponentActivity() {
         Toast.makeText(this, "onResume chamado", Toast.LENGTH_SHORT).show()
     }
 
+    //onPause: Chamado quando a Activity está prestes a sair do primeiro plano,
+    // por exemplo, quando uma caixa de diálogo é aberta.
+    // Exibe a mensagem "onPause chamado".
     override fun onPause() {
         super.onPause()
 
@@ -50,6 +60,8 @@ class MainActivity : ComponentActivity() {
         Toast.makeText(this, "onPause chamado", Toast.LENGTH_SHORT).show()
     }
 
+    //onStop: Chamado quando a Activity não está mais visível.
+    // Esse método libera recursos temporários e exibe "onStop chamado".
     override fun onStop() {
         super.onStop()
 
@@ -58,6 +70,7 @@ class MainActivity : ComponentActivity() {
         Toast.makeText(this, "onStop chamado", Toast.LENGTH_SHORT).show()
     }
 
+    //onDestroy: Chamado antes da Activity ser destruída. Exibe "onDestroy chamado".
     override fun onDestroy() {
         super.onDestroy()
 
